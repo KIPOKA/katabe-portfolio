@@ -25,10 +25,12 @@ import cert6 from "./assets/images/Certifications/cert6.png";
 import cert7 from "./assets/images/Certifications/cert7.png";
 import cert8 from "./assets/images/Certifications/cert8.jpeg";
 import boot from "./assets/images/Skills/boot.png";
-
+import digital from "./assets/images/Skills/digital.jpeg";
+import portfolio from "./assets/images/Skills/portfolio.jpg";
 import bricoll from "./assets/images/Projects/bricoll.webp";
-import aman from "./assets/images/Projects/aman.png";
-
+import aman from "./assets/images/Skills/pizza.png";
+import student from "./assets/images/Skills/student.jpeg";
+import lib from "./assets/images/Skills/lib.jpeg";
 import avatar1 from "./assets/images/Testimonials/avatar1.png";
 import avatar2 from "./assets/images/Testimonials/avatar2.png";
 import avatar3 from "./assets/images/Testimonials/avatar3.png";
@@ -58,10 +60,7 @@ const Nav = [
     link: "#skills",
     icon: GiSkills,
   },
-  {
-    link: "#certifications",
-    icon: TbCertificate,
-  },
+
   {
     link: "#services",
     icon: RiServiceLine,
@@ -78,29 +77,19 @@ const Nav = [
 
 const social_media = [
   {
-    text: "souhaibemanah@gmail.com",
+    text: "ladykipoka@gmail.com",
     icon: GrMail,
-    link: "mailto:souhaibemanah@gmail.com",
+    link: "mailto:ladykipoka@gmail.com",
   },
   {
-    text: "sohaib manah",
+    text: "Katabe KL",
     icon: AiFillLinkedin,
-    link: "https://www.linkedin.com/in/sohaibmanah/",
+    link: "https://www.linkedin.com/in/kl-katabe-7a7623204/",
   },
   {
-    text: "sohaibMan",
+    text: "Katabe",
     icon: AiFillGithub,
-    link: "https://github.com/sohaibMan",
-  },
-  {
-    text: "sohaib M",
-    icon: SiUpwork,
-    link: "https://www.upwork.com/freelancers/~010a44723a9108a1bc",
-  },
-  {
-    text: "sohaibesohaib",
-    icon: TbBrandFiverr,
-    link: "https://www.fiverr.com/sohaibesohaib",
+    link: "https://github.com/KIPOKA",
   },
 ];
 const cert_content = [
@@ -184,7 +173,7 @@ export const content = {
       hero_content: [
         {
           count: `+${
-            new Date(new Date() - new Date("2022-07-07")).getFullYear() - 1970
+            new Date().getFullYear() - new Date("2022-07-07").getFullYear()
           }`,
           text: "Years of Experience in Web development And  Mobile development ",
         },
@@ -206,33 +195,33 @@ export const content = {
         {
           name: "React JS",
           para: "Building responsive and dynamic user interfaces for web applications.",
-          logo: react, // React JS logo
+          logo: react,
         },
         {
           name: "Bootstrap",
           para: "Designing modern and responsive websites with the Bootstrap framework.",
-          logo: boot, // Bootstrap logo
+          logo: boot,
         },
 
         {
           name: "Node.js",
           para: "Developing server-side logic and building scalable applications with Node.js.",
-          logo: nodejs, // Node.js logo
+          logo: nodejs,
         },
         {
           name: "HTML & CSS",
           para: "Crafting modern web interfaces with HTML5 and CSS3 for responsive design.",
-          logo: html, // HTML5 logo
+          logo: html,
         },
         {
           name: "MySQL",
           para: "Database management, relational data modeling, and query optimization with MySQL.",
-          logo: mysql, // MySQL logo
+          logo: mysql,
         },
         {
           name: "PL/SQL",
           para: "Writing and optimizing stored procedures, functions, and triggers using PL/SQL.",
-          logo: pl, // PL/SQL logo
+          logo: pl,
         },
         {
           name: "Tailwind CSS",
@@ -317,92 +306,32 @@ export const content = {
           title: "Pizza Shop App",
           para: "This is an online pizza shop, using Java and MySQL database.",
           image: aman,
-          githubLink: "https://github.com/2aman-lafr9a",
+          githubLink: "https://github.com/KIPOKA/PizzaApp",
         },
         {
           title: "Library Management System",
           para: "This is a Python project with Django Admin for database storage, and still working on it to improve.",
-          image: bricoll,
-          githubLink: "https://github.com/sohaibMan/bricoll",
+          image: lib,
+          githubLink: "https://github.com/KIPOKA/Book-Management",
         },
         {
           title: "Student Management System",
           para: "This is a Java EE web application using JSP, GlassFish Server, Servlet, etc.",
-          image: aman,
-          githubLink: "https://github.com/2aman-lafr9a",
+          image: student,
+          githubLink: "https://github.com/KIPOKA/Student-management-system",
         },
         {
           title: "Digital Marketing Agency Web",
           para: "This is a Python and Django, Bootstrap, HTML, and CSS project, with an online messaging system for real-time email.",
-          image: bricoll,
-          githubLink: "https://github.com/sohaibMan/bricoll",
+          image: digital,
+          githubLink: "https://github.com/KIPOKA/Digitalmarketingagency",
         },
+
         {
-          title: "Ubuntu Job Finder",
-          para: "A TypeScript project to help users find jobs in the Ubuntu ecosystem.",
-          image: aman,
-          githubLink: "https://github.com/2aman-lafr9a/ubuntu-job-finder",
-        },
-        {
-          title: "MyPortfolio",
+          title: "My Portfolio",
           para: "An HTML-based personal portfolio site showcasing skills and projects.",
-          image: bricoll,
-          githubLink: "https://github.com/sohaibMan/MyPortfolio",
-        },
-        {
-          title: "Auth Project",
-          para: "A project focused on user authentication, managing login and registration.",
-          image: aman,
-          githubLink: "https://github.com/2aman-lafr9a/auth-project",
-        },
-        {
-          title: "WebToken",
-          para: "A JavaScript project dealing with JSON Web Tokens for secure authentication.",
-          image: bricoll,
-          githubLink: "https://github.com/sohaibMan/webtoken",
-        },
-        {
-          title: "Profile",
-          para: "A JavaScript project for handling user profile data.",
-          image: aman,
-          githubLink: "https://github.com/2aman-lafr9a/profile",
-        },
-        {
-          title: "Automated",
-          para: "An HTML project focusing on automation tasks.",
-          image: bricoll,
-          githubLink: "https://github.com/sohaibMan/automated",
-        },
-        {
-          title: "Satori",
-          para: "A Python project with a focus on data analysis and machine learning.",
-          image: aman,
-          githubLink: "https://github.com/2aman-lafr9a/satori",
-        },
-        {
-          title: "DevOps Exercises",
-          para: "A project focused on DevOps practices and exercises.",
-          image: bricoll,
-          githubLink: "https://github.com/sohaibMan/devops-exercises",
-        },
-        {
-          title: "Audio",
-          para: "A Python project related to audio processing.",
-          image: aman,
-          githubLink: "https://github.com/2aman-lafr9a/audio",
-        },
-        {
-          title: "Car Renting Web Application",
-          para: "A JavaScript web application for car rentals.",
-          image: bricoll,
-          githubLink:
-            "https://github.com/sohaibMan/Car-renting-web-application",
-        },
-        {
-          title: "Restaurant Portfolio",
-          para: "A portfolio website for a restaurant, showcasing its menu and services.",
-          image: aman,
-          githubLink: "https://github.com/2aman-lafr9a/Restaurant-Portfolio",
+          image: portfolio,
+          githubLink: "https://github.com/KIPOKA/portofolio",
         },
       ],
     },
@@ -444,8 +373,8 @@ export const content = {
     Aboutme: {
       title: "About Me",
       subtitle: "//This is a brief introduction about me",
-      image1: hireme_person,
-      image2: hireme_person,
+      image1: Hero_person,
+      image2: Hero_person,
       para: "As a motivated and dedicated junior software developer, I am eager to contribute to a dynamic and challenging work environment. Driven by a passion for technology and security, I continually seek opportunities to expand my knowledge and refine my skills. I excel at tackling complex problems with innovative and creative solutions and thrive in environments that embrace new challenges. I am excited to apply my expertise in a setting that fosters growth, collaboration, and forward-thinking.",
       btnText: "More about me",
     },
@@ -466,15 +395,13 @@ export const content = {
       title: "Développeur Logiciel",
       firstName: "KATABE",
       LastName: "KIPOKA L.",
-      // btnText: "Consulter mon curriculum vitæ",
-      // btnLink: "https://www.canva.com/design/DAFltazUEpM/1HUGhv9zLupr7TU3NbZ68w/view",
       image: Hero_person,
       hero_content: [
         {
           count: `+${
-            new Date(new Date() - new Date("2022-07-07")).getFullYear() - 1970
+            new Date().getFullYear() - new Date("2022-07-07").getFullYear()
           }`,
-          text: "An d'expérience en développement Web et en développement de logiciels",
+          text: "Ans d'expérience en développement Web et en développement de logiciels",
         },
         {
           count: "10+",
@@ -574,76 +501,67 @@ export const content = {
       ],
     },
     services: {
-      title: "Les services",
-      subtitle: "ce que j'offre",
+      title: "Services",
+      subtitle: "//ce que je propose",
       service_content: [
         {
-          title: "Développement web",
-          para: "Construire des applications web et des sites web avec des technologies modernes et les meilleures pratiques est ma passion et je peux vous aider à le faire avec mon expérience dans ce domaine",
+          title: "Développement Web",
+          para: "Construire des applications web et des sites internet avec des technologies modernes et les meilleures pratiques est ma passion, et je peux vous aider à le faire grâce à mon expérience dans ce domaine.",
           logo: services_logo1,
         },
         {
-          title: "Architecte cloud",
-          para: "Je peux vous aider à concevoir et à mettre en œuvre des solutions cloud sécurisées, évolutives et rentables",
+          title: "Développement Mobile",
+          para: "Créer des applications mobiles multiplateformes avec les derniers outils et frameworks pour offrir une expérience utilisateur fluide sur Android et iOS.",
           logo: services_logo2,
         },
         {
-          title: "DevOps",
-          para: "Je peux vous aider à automatiser votre processus de déploiement et à le rendre plus fiable et résilient",
+          title: "Conception de Base de Données",
+          para: "Concevoir et optimiser des systèmes de bases de données pour la scalabilité, l'efficacité et la fiabilité afin de garantir l'intégrité des données et un accès rapide.",
           logo: services_logo3,
         },
       ],
     },
+
     Projects: {
-      title: "Projects",
-      subtitle: "Ma création",
+      title: "Projets",
+      subtitle: "//mes créations",
       project_content: [
         {
-          title:
-            "Plateforme d'assurance SaaS pour les clubs de football en utilisant machine learning et blockchain",
+          title: "Application Pizza Shop",
+          para: "Il s'agit d'une pizzeria en ligne, utilisant Java et une base de données MySQL.",
           image: aman,
-          githubLink: "https://github.com/2aman-lafr9a",
+          githubLink: "https://github.com/KIPOKA/PizzaApp",
         },
         {
-          title: "site web de freealnce -- 'bricoll'",
-          image: bricoll,
-          githubLink: "https://github.com/sohaibMan/bricoll",
+          title: "Système de Gestion de Bibliothèque",
+          para: "C'est un projet Python avec Django Admin pour le stockage de la base de données, et je continue à y travailler pour l'améliorer.",
+          image: lib,
+          githubLink: "https://github.com/KIPOKA/Book-Management",
+        },
+        {
+          title: "Système de Gestion Étudiant",
+          para: "Il s'agit d'une application web Java EE utilisant JSP, GlassFish Server, Servlet, etc.",
+          image: student,
+          githubLink: "https://github.com/KIPOKA/Student-management-system",
+        },
+        {
+          title: "Site Web d'Agence de Marketing Digital",
+          para: "C'est un projet Python et Django, avec Bootstrap, HTML, CSS, et un système de messagerie en ligne pour les emails en temps réel.",
+          image: digital,
+          githubLink: "https://github.com/KIPOKA/Digitalmarketingagency",
+        },
+        {
+          title: "Mon Portfolio",
+          para: "Un site portfolio personnel basé sur HTML mettant en avant mes compétences et projets.",
+          image: portfolio,
+          githubLink: "https://github.com/KIPOKA/portofolio",
         },
       ],
     },
-    Testimonials: {
-      title: "Témoignages",
-      subtitle: "ÉVALUATIONS DE MES CLIENTS",
-      testimonials_content: [
-        {
-          review:
-            "“Merci d’avoir communiqué avec nous et de l’excellent travail que vous avez accompli.  nous sommes très satisfaits du produit final, votre expertise et votre professionnalisme ont été inestimables pour notre projet, et je n’ai aucun doute que vous continuerez à offrir d’excellents services.“",
-          img: avatar1,
-          name: "Mohamed E. Bougeons ensemble club ",
-        },
-        {
-          review:
-            "“Je sais à quel point il est important de travailler avec des personnes fiables, flexibles et réactives, et Sohaib a certainement démontré ces qualités tout au long du projet.  Leur expertise et leur souci du détail étaient inestimables",
-          img: avatar2,
-          name: "Manal Z. chef d'équipe d'It Geeks",
-        },
-        {
-          review:
-            "“Sohaib était formidable, a fait un excellent travail en comprenant les besoins de mes projets, et livré super rapide! Je recommande vivement ses services.”",
-          img: avatar3,
-          name: "jean V. Fiverr Client",
-        },
-        {
-          review:
-            "“Je voulais prendre un moment pour partager mon expérience positive avec Sohaib, que j’ai récemment embauché pour aider à l’effort de rebranding de notre entreprise. ”",
-          img: avatar3,
-          name: "khalid D. Fiverr Client",
-        },
-      ],
-    },
+
     Aboutme: {
       title: "A propos de moi",
-      subtitle: "Bonjour Cher,Ceci est une brève introduction sur moi",
+      subtitle: "//Ceci est une brève introduction sur moi",
       image1: Hero_person,
       image2: Hero_person,
       para: "En tant que développeur logiciel junior motivé et dévoué, je suis impatient de contribuer à un environnement de travail dynamique et stimulant. Animé par une passion pour la technologie et la sécurité, je cherche continuellement des opportunités pour approfondir mes connaissances et perfectionner mes compétences. J'excelle dans la résolution de problèmes complexes grâce à des solutions innovantes et créatives, et je m'épanouis dans des environnements qui valorisent les nouveaux défis. Je suis enthousiaste à l'idée de mettre mon expertise au service d'un cadre qui favorise la croissance, la collaboration et l'innovation.",

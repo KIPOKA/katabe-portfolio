@@ -89,6 +89,14 @@ const Projects = () => {
             ))}
           </Swiper>
         </div>
+        <div className="flex justify-center items-center mt-4 mb-4">
+          <a
+            href="https://github.com/KIPOKA"
+            className="border-2 rounded-xl bg-green-600 text-white text-2xl px-12 py-2.5 hover:bg-green-700 transition-colors duration-300 focus:outline-none"
+          >
+            See More!
+          </a>
+        </div>
       </div>
     </section>
   );

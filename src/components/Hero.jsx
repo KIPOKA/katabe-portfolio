@@ -42,13 +42,13 @@ const Hero = () => {
         </div>
 
         {/* sec col */}
-        <div className="md:h-[40rem] h-[90rem]">
+        <div className="w-full md:h-[40rem] h-[60rem] md:w-6/12">
           <img
             loading="lazy"
             src={hero.image}
             data-aos="slide-up"
-            alt="..."
-            className="h-full object-cover"
+            alt="hero"
+            className="h-full w-full object-cover rounded-lg"
           />
         </div>
       </div>

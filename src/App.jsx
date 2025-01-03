@@ -4,14 +4,13 @@ import Navbar from "./Layouts/Navbar";
 import Skills from "./components/Skills";
 import Service from "./components/Services";
 import Projects from "./components/Projects";
-import Testimonials from "./components/Testimonials";
 import Aboutme from "./components/Aboutme";
 import Contact from "./components/Contact";
 import { createContext, useEffect, useState } from "react";
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Certifications from "./components/Certifications";
+import Experience from "./components/Experience";
 
 const context = createContext(null);
 const App = () => {
@@ -35,11 +34,13 @@ const App = () => {
     <context.Provider value={lang}>
       <Navbar changeLangHandler={changeLangHandler} />
       <Hero />
+
       <Aboutme />
+      <Experience />
       <Skills />
       <Service />
       <Projects />
-      <Testimonials />
+
       <Contact />
     </context.Provider>
   );
