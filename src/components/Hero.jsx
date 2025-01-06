@@ -8,17 +8,10 @@ const Hero = () => {
   const { hero } = content[lang];
 
   return (
-    <section id="home" className="overflow-hidden ">
-      <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
-        <div
-          data-aos="slide-left"
-          data-aos-delay="800"
-          className="absolute h-full md:w-5/12 w-8/12 top-0 right-0 bg-[#0a192f] bottom-0 -z-10"
-        ></div>
-
-        {/* first col */}
+    <section id="home" className="overflow-hidden">
+      <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center pt-0 mt-0">
         <div className="pb-16 px-6 pt-5" data-aos="fade-down">
-          <h3 className="text-center text-[#1c7ed6]">
+          <h3 className="text-center text-[#1c7ed6] mt-[-50%]">
             {hero.firstName}{" "}
             <span className="text-dark_primary">{hero.LastName}</span>
           </h3>
@@ -39,9 +32,6 @@ const Hero = () => {
             ))}
           </div>
         </div>
-
-        {/* sec col */}
-        <div className="w-full md:h-[40rem] h-[60rem] md:w-6/12"></div>
       </div>
     </section>
   );
