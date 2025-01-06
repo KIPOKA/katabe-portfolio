@@ -37,7 +37,9 @@ const Aboutme = () => {
             <p className="leading-7">{Aboutme.para}</p>
             <br />
             <button className="btn bg-dark_primary text-white">
-              <a href="#skills">{Aboutme.btnText}</a>
+              <a href=" \src\assets\cv\CV.pdf" download="My_CV.pdf">
+                {Aboutme.btnText}
+              </a>
             </button>
           </div>
         </div>

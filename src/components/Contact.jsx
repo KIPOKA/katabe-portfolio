@@ -1,120 +1,106 @@
-import { createElement, useContext, useRef } from "react";
+import { createElement, useContext } from "react";
 import { content } from "../Content";
-import toast, { Toaster } from "react-hot-toast";
 import { context } from "../App";
-
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 const Contact = () => {
   const lang = useContext(context);
   const { Contact } = content[lang];
-  const form = useRef();
-
-  const scriptURL =
-    "https://script.google.com/macros/s/AKfycbz3VjPhHrM1SAxK3DsbB_gYZZk4ouI93zNRyvTxpFnIZnkANMS8QD-Q1qaNvzDp2fphxg/exec";
-
-  // Sending Email
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    fetch(scriptURL, { method: "POST", body: new FormData(form.current) })
-      .then((response) => {
-        console.log("Success!", response);
-        form.current.reset(); // Reset the form
-        toast.success("Message has been successfully sent!");
-      })
-      .catch((error) => {
-        console.error("Error!", error.message);
-        toast.error("Something went wrong. Please try again.");
-      });
-  };
 
   return (
-    <section
-      className="bg-gradient-to-r from-gray-800 to-gray-600 text-white py-14"
-      id="contact"
-    >
-      <Toaster />
-      <div className="container mx-auto px-5">
-        <div className="text-center mb-10">
-          <h2
-            className="text-3xl md:text-4xl font-semibold"
-            data-aos="fade-down"
-          >
-            {Contact.title}
+    <section className="bg-bg_light_primary py-16 px-6" id="contact">
+      <h2
+        className="text-3xl md:text-4xl font-bold text-center "
+        data-aos="fade-down"
+      >
+        {Contact.title}
+      </h2>
+      <h4
+        className="text-lg md:text-xl text-gray-200 mt-3 text-center"
+        data-aos="fade-down"
+      >
+        {Contact.subtitle}
+      </h4>
+
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 mt-10">
+        {/* Left Section */}
+        <div className="text-white">
+          <h2 className="text-3xl font-bold mb-4  text-[#0a192f]">
+            Get In Touch
           </h2>
-          <h4
-            className="text-lg md:text-xl text-gray-300 mt-3"
-            data-aos="fade-down"
-          >
-            {Contact.subtitle}
-          </h4>
+          <p className="mb-6 text-lg text-gray-200  text-[#0a192f]">
+            Feel free to contact me! Submit your queries here and we will get
+            back to you as soon as possible.
+          </p>
+          <div className="space-y-6">
+            <div className="flex items-center gap-4">
+              <FaEnvelope className="text-3xl  text-[#0a192f] " />{" "}
+              {/* Using FaEnvelope icon */}
+              <p className="text-lg">ladykipoka@gmail.com</p>
+            </div>
+          </div>
+
+          <div className="mt-8 flex gap-5">
+            {/* Social Icons */}
+            {Contact.social_media.map((content, i) => (
+              <a
+                key={i}
+                href={content.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-aos="fade-down"
+                data-aos-delay={i * 200}
+                className="bg-[#0a192f] p-3 rounded-full shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
+              >
+                {createElement(content.icon, {
+                  className: "text-white text-xl",
+                })}
+              </a>
+            ))}
+          </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-          {/* Form Section on the right */}
+        {/* Right Section */}
+        <div
+          className="bg-white p-10 rounded-lg shadow-lg border-t-4 border-[#0a192f]"
+          data-aos="fade-left"
+        >
+          <h3 className="text-xl font-semibold text-gray-800 mb-6 text-center">
+            Send Us Message
+          </h3>
           <form
-            ref={form}
-            onSubmit={sendEmail}
-            data-aos="fade-up"
-            className="bg-[#1c7ed6] p-8 rounded-lg shadow-xl flex flex-col gap-4 w-full md:w-1/2"
+            className="space-y-6"
+            action="https://getform.io/f/d030d418-bf31-43e3-8b25-f7c2eb9b149f"
+            method="POST"
           >
-            <input
-              type="text"
-              name="from_name"
-              placeholder="Your Name"
-              required
-              className="border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-green-600 focus:outline-none text-black transition duration-300 hover:border-green-500"
-            />
-            <input
-              type="email"
-              name="user_email"
-              pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}"
-              placeholder="Your Email"
-              required
-              className="border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-green-600 focus:outline-none text-black transition duration-300 hover:border-green-500"
-            />
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              required
-              className="border border-gray-300 p-3 rounded-md h- 44 focus:ring-2 focus:ring-green-600 focus:outline-none text-black transition duration-300 hover:border-green-500"
-            ></textarea>
-            <div className="flex justify-center">
-              <button
-                type="submit"
-                className="bg-green-500 text-white py-3 rounded-md hover:bg-green-600 transition duration-300 w-[40%] flex items-center justify-center"
-              >
-                Submit
-              </button>
+            <div>
+              <input
+                type="text"
+                placeholder="Name"
+                className="w-full border border-gray-300 rounded-md p-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm"
+              />
             </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Email"
+                className="w-full border border-gray-300 rounded-md p-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm"
+              />
+            </div>
+            <div>
+              <textarea
+                placeholder="Message"
+                className="w-full border border-gray-300 rounded-md p-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm"
+                rows="4"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-[#0a192f] text-white py-3 rounded-md font-semibold shadow-md hover:shadow-lg transform transition-all duration-300 hover:scale-105"
+            >
+              Submit
+            </button>
           </form>
         </div>
-      </div>
-      {/* Social Media Section on the left */}
-
-      <div className="flex flex-col md:flex-row gap-6 w-full md:w-1/3 items-center justify-center text-black">
-        {Contact.social_media.map((content, i) => (
-          <div
-            key={i}
-            data-aos="fade-down"
-            data-aos-delay={i * 200}
-            className="flex flex-col items-center md:flex-row gap-3 text-lg"
-          >
-            {/* Icon */}
-            <div className="p-3 bg-gray-200 rounded-full flex items-center justify-center">
-              {createElement(content.icon, { className: "text-xl text-black" })}
-            </div>
-
-            {/* Text and Link */}
-            <a
-              href={content.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-black hover:underline"
-            >
-              {content.text}
-            </a>
-          </div>
-        ))}
       </div>
     </section>
   );

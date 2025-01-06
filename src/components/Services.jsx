@@ -7,7 +7,7 @@ const Services = () => {
   const lang = useContext(context);
   const { services } = content[lang];
   return (
-    <section id="services">
+    <section id="services" className="bg-bg_light_primary">
       <div className="md:container px-5 py-14">
         <h2 className="title" data-aos="fade-down">
           {services.title}

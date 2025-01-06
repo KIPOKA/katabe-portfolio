@@ -17,7 +17,7 @@ const Projects = () => {
 
   const { Projects } = content[lang];
   return (
-    <section className="bg-bg_light_primary" id="projects">
+    <section className="bg-gray-300" id="projects">
       <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
         <div>
           <h2 className="title" data-aos="fade-down">
@@ -92,7 +92,7 @@ const Projects = () => {
         <div className="flex justify-center items-center mt-4 mb-4">
           <a
             href="https://github.com/KIPOKA"
-            className="border-2 rounded-xl bg-green-600 text-white text-2xl px-12 py-2.5 hover:bg-green-700 transition-colors duration-300 focus:outline-none"
+            className="border-2 rounded-xl bg-[#0a192f] text-white text-2xl px-12 py-2.5 hover:bg-green-700 transition-colors duration-300 focus:outline-none"
           >
             See More!
           </a>

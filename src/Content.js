@@ -38,6 +38,7 @@ import {
   RiProjectorLine,
   RiServiceLine,
   RiBriefcaseLine,
+  RiBookOpenLine,
 } from "react-icons/ri";
 
 const Nav = [
@@ -58,6 +59,10 @@ const Nav = [
     icon: RiBriefcaseLine,
   },
   {
+    link: "#education",
+    icon: RiBookOpenLine,
+  },
+  {
     link: "#services",
     icon: RiServiceLine,
   },
@@ -65,6 +70,7 @@ const Nav = [
     link: "#projects",
     icon: RiProjectorLine,
   },
+
   {
     link: "#contact",
     icon: MdOutlinePermContactCalendar,
@@ -268,6 +274,32 @@ export const content = {
         },
       ],
     },
+    education: {
+      title: "Education",
+      subtitle: "//My academic journey",
+      education_content: [
+        {
+          institution: "Tshwane University of Technology - South Africa",
+          qualification: "Advanced Diploma in Computer Science",
+          duration: "2023 - Current",
+          description: [
+            "Pursuing advanced knowledge in computer science, including system analysis, software engineering, and emerging technologies.",
+            "Focusing on developing expertise in cutting-edge tools and frameworks to solve complex technical challenges.",
+          ],
+        },
+        {
+          institution: "Tshwane University of Technology - South Africa",
+          qualification: "Diploma in Computer Science",
+          duration: "2020 - 2022",
+          description: [
+            "Gained foundational knowledge in computer science, including programming, data structures, and software development.",
+            "Participated in projects that enhanced problem-solving and coding skills.",
+            "Focused on building a solid understanding of computer systems and technology.",
+          ],
+        },
+      ],
+    },
+
     Projects: {
       title: "Projects",
       subtitle: "//my creations",
@@ -374,6 +406,32 @@ export const content = {
         },
       ],
     },
+    education: {
+      title: "Éducation",
+      subtitle: "//Mon parcours académique",
+      education_content: [
+        {
+          institution: "Tshwane University of Technology - Afrique du Sud",
+          qualification: "Bachelor en Computer Science",
+          duration: "2023 - Actuel",
+          description: [
+            "Poursuite de connaissances avancées en informatique, y compris l'analyse de systèmes, l'ingénierie logicielle et les technologies émergentes.",
+            "Focalisation sur le développement d'une expertise dans les outils et cadres innovants pour résoudre des défis techniques complexes.",
+          ],
+        },
+        {
+          institution: "Tshwane University of Technology - Afrique du Sud",
+          qualification: "Diplôme en Computer Science",
+          duration: "2020 - 2022",
+          description: [
+            "Acquisition de connaissances fondamentales en informatique, y compris la programmation, les structures de données et le développement logiciel.",
+            "Participation à des projets qui ont renforcé les compétences en résolution de problèmes et en codage.",
+            "Concentration sur la construction d'une compréhension solide des systèmes informatiques et des technologies.",
+          ],
+        },
+      ],
+    },
+
     experiences: {
       title: "Expérience",
       subtitle: "//Une chronologie de mon parcours professionnel",

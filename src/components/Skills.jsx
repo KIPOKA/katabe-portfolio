@@ -9,7 +9,7 @@ const Skills = () => {
   const { skills } = content[lang];
 
   return (
-    <section className="min-h-fit bg-bg_light_primary py-14" id="skills">
+    <section className="min-h-fit bg-gray-300 py-14" id="skills">
       {/* content */}
       <div className="md:container px-5">
         <h2

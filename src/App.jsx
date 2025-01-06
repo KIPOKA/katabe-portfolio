@@ -11,6 +11,7 @@ import { createContext, useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Experience from "./components/Experience";
+import Education from "./components/Education";
 
 const context = createContext(null);
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
       <Hero />
       <Aboutme />
       <Experience />
+      <Education />
       <Skills />
       <Service />
       <Projects />
