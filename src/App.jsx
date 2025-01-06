@@ -34,7 +34,6 @@ const App = () => {
     <context.Provider value={lang}>
       <Navbar changeLangHandler={changeLangHandler} />
       <Hero />
-
       <Aboutme />
       <Experience />
       <Skills />

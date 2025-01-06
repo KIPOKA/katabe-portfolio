@@ -18,16 +18,9 @@ import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 import pl from "./assets/images/Skills/pl.png";
 import com from "./assets/images/Skills/com.png";
-import cert1 from "./assets/images/Certifications/cert1.png";
-import cert2 from "./assets/images/Certifications/cert2.png";
-import cert5 from "./assets/images/Certifications/cert5.png";
-import cert6 from "./assets/images/Certifications/cert6.png";
-import cert7 from "./assets/images/Certifications/cert7.png";
-import cert8 from "./assets/images/Certifications/cert8.jpeg";
 import boot from "./assets/images/Skills/boot.png";
 import digital from "./assets/images/Skills/digital.jpeg";
 import portfolio from "./assets/images/Skills/portfolio.jpg";
-import bricoll from "./assets/images/Projects/bricoll.webp";
 import aman from "./assets/images/Skills/pizza.png";
 import student from "./assets/images/Skills/student.jpeg";
 import lib from "./assets/images/Skills/lib.jpeg";
@@ -35,17 +28,17 @@ import avatar1 from "./assets/images/Testimonials/avatar1.png";
 import avatar2 from "./assets/images/Testimonials/avatar2.png";
 import avatar3 from "./assets/images/Testimonials/avatar3.png";
 
-import hireme_person from "./assets/images/Hireme/person.png";
-
 import { GrMail } from "react-icons/gr";
 import { GiSkills } from "react-icons/gi";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
-import { TbCertificate, TbSmartHome } from "react-icons/tb";
+import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { SiUpwork } from "react-icons/si";
-import { TbBrandFiverr } from "react-icons/tb";
-import { RiProjectorLine, RiServiceLine } from "react-icons/ri";
+import {
+  RiProjectorLine,
+  RiServiceLine,
+  RiBriefcaseLine,
+} from "react-icons/ri";
 
 const Nav = [
   {
@@ -60,7 +53,10 @@ const Nav = [
     link: "#skills",
     icon: GiSkills,
   },
-
+  {
+    link: "#experience",
+    icon: RiBriefcaseLine,
+  },
   {
     link: "#services",
     icon: RiServiceLine,
@@ -90,73 +86,6 @@ const social_media = [
     text: "Katabe",
     icon: AiFillGithub,
     link: "https://github.com/KIPOKA",
-  },
-];
-const cert_content = [
-  {
-    title: "Oracle Cloud Infrastructure 2024 Certified Developer Professional",
-    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=62C57609853F17D04BC5C8213FE5F74514586122F8FA58C788102AFC03DFE33C",
-    image:
-      "https://brm-workforce.oracle.com/pdf/certview/images/OCID2024CP.png",
-  },
-  {
-    title: "Oracle Certified Professional, Java SE 8 Programmer",
-    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=7150FE2EA98D08F2D32A1F2DD4A5A487B04D95277185B268D04CEE1E1298F3AB",
-    image: "https://brm-workforce.oracle.com/pdf/certview/images/OCPJSE8.png",
-  },
-  {
-    title: "Oracle Cloud Infrastructure 2024 Certified DevOps Professional",
-    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=626266EE80DDDC838B6D5FFCD8567ABD36933ADEFF42EF705D948D1147967D74",
-    image:
-      "https://brm-workforce.oracle.com/pdf/certview/images/OCI2024DOPOCP.png",
-  },
-  {
-    title: "Oracle Certified Associate, Java SE 8 Programmer",
-    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=7D311F9484B6360A03BC18199C0FDBFCD7B252935AB01626B20902BF93BA49DB",
-    image: "https://brm-workforce.oracle.com/pdf/certview/images/OCAJSE8.png",
-  },
-  {
-    title:
-      "Oracle Cloud Infrastructure 2024 Certified AI Foundations Associate",
-    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=2766D12BC1722B59E051F38F5B122C78B2119732F2AF774A430314D257CF0B5F",
-    image:
-      "https://brm-workforce.oracle.com/pdf/certview/images/OCI24AICFA.png",
-  },
-  {
-    title: "Oracle Cloud Infrastructure 2024 Certified Foundations Associate",
-    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=626266EE80DDDC838B6D5FFCD8567ABD04D625908DC961DB0D8583FF3C5E80D4",
-    image:
-      "https://brm-workforce.oracle.com/pdf/certview/images/OCI2024FNDCFA.png",
-  },
-  {
-    title: "MongoDB Associate Developer",
-    link: "https://brm-workforce.oracle.com/pdf/certview/images/OCI24AICFA.png",
-    image: cert1,
-  },
-  {
-    title: "Agile Project Management",
-    link: "https://coursera.org/share/a92c70e92b02890f7d7a5ab3deb418ab",
-    image: cert8,
-  },
-  {
-    title: "MongoDB Data Modeling",
-    image: cert2,
-    link: "https://learn.mongodb.com/c/lkxA2J6RTE2Ash0IL--EtA",
-  },
-  {
-    title: "Postman API Fundamentals Student Expert",
-    link: "https://badgr.com/public/assertions/JKnbd3dAQwCPpg3dxr1n_A?identity__email=sohaib.manah@etu.uae.ac.ma",
-    image: cert5,
-  },
-  {
-    title: "SQL (Advanced)",
-    link: "https://www.hackerrank.com/certificates/3a683fbab8d4",
-    image: cert6,
-  },
-  {
-    title: "MongoDB Python Developer Path",
-    link: "https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/a96c73c5-e997-5d54-80a0-54f8afa0e457-sohaib-manah-0239280c-b43a-45ac-a4b7-a55c4db1b568-certificate.pdf",
-    image: cert7,
   },
 ];
 
@@ -297,7 +226,48 @@ export const content = {
         },
       ],
     },
-
+    experiences: {
+      title: "Experience",
+      subtitle: "//A timeline of my professional journey",
+      experience_content: [
+        {
+          company: "Fluid Intellect",
+          role: "Junior Software Developer",
+          duration: "Oct 2023 - Present",
+          description: [
+            "Took on diverse responsibilities in mobile front-end aesthetics, WordPress front-end design, and API development using Node.js.",
+            "Contributed to creating captivating digital experiences.",
+            "Focused on building intuitive and visually appealing interfaces with React Native.",
+            "Ensured seamless design translation across various mobile devices.",
+            "Worked under the guidance of senior team members to refine front-end design skills and back-end development.",
+          ],
+        },
+        {
+          company: "Fluid Intellect",
+          role: "Software Developer Intern",
+          duration: "March 2023 - August 2023",
+          description: [
+            "Contributed to mobile front-end aesthetics, WordPress front-end allure, and Flask for robust APIs.",
+            "Explored crafting immersive digital experiences.",
+            "Developed mobile front-end mastery with React Native and React.js.",
+            "Built reusable components to enhance development efficiency.",
+            "Created intuitive, visually striking interfaces.",
+            "Ensured seamless functionality across various mobile devices.",
+          ],
+        },
+        {
+          company: "4IR Lab MICT SETA",
+          role: "Software Developer Intern",
+          duration: "Sep 2022 - Feb 2023",
+          description: [
+            "Specialized in both front-end and back-end technologies.",
+            "Contributed to innovative solutions for real-world challenges.",
+            "Focused on front-end technologies, including React JS for web applications and React Native for mobile applications.",
+            "Designed and implemented visually appealing, responsive, and user-friendly user interfaces.",
+          ],
+        },
+      ],
+    },
     Projects: {
       title: "Projects",
       subtitle: "//my creations",
@@ -383,11 +353,6 @@ export const content = {
       subtitle: "LET'S GET IN TOUCH",
       social_media,
     },
-    Certifications: {
-      title: "Certifications",
-      subtitle: "My Certifications",
-      cert_content,
-    },
   },
   fr: {
     Nav,
@@ -409,6 +374,49 @@ export const content = {
         },
       ],
     },
+    experiences: {
+      title: "Expérience",
+      subtitle: "//Une chronologie de mon parcours professionnel",
+      experience_content: [
+        {
+          company: "Fluid Intellect",
+          role: "Développeur Logiciel Junior",
+          duration: "Oct 2023 - Présent",
+          description: [
+            "Assumé diverses responsabilités dans l'esthétique des interfaces mobiles, la conception front-end de WordPress et le développement d'API avec Node.js.",
+            "Contribué à la création d'expériences numériques captivantes.",
+            "Concentré sur la création d'interfaces intuitives et visuellement attrayantes avec React Native.",
+            "Assuré une traduction fluide des conceptions sur divers appareils mobiles.",
+            "Travaillé sous la direction de membres seniors de l'équipe pour affiner les compétences en conception front-end et en développement back-end.",
+          ],
+        },
+        {
+          company: "Fluid Intellect",
+          role: "Stagiaire Développeur Logiciel",
+          duration: "Mars 2023 - Août 2023",
+          description: [
+            "Contribué à l'esthétique des interfaces mobiles, à l'attrait front-end de WordPress et à la création d'API robustes avec Flask.",
+            "Exploré la création d'expériences numériques immersives.",
+            "Développé une maîtrise du front-end mobile avec React Native et React.js.",
+            "Construit des composants réutilisables pour améliorer l'efficacité du développement.",
+            "Créé des interfaces intuitives et visuellement impressionnantes.",
+            "Assuré une fonctionnalité fluide sur divers appareils mobiles.",
+          ],
+        },
+        {
+          company: "4IR Lab MICT SETA",
+          role: "Stagiaire Développeur Logiciel",
+          duration: "Sept 2022 - Fév 2023",
+          description: [
+            "Spécialisé dans les technologies front-end et back-end.",
+            "Contribué à des solutions innovantes pour des défis réels.",
+            "Focalisé sur les technologies front-end, y compris React JS pour les applications web et React Native pour les applications mobiles.",
+            "Conçu et mis en œuvre des interfaces utilisateur visuellement attrayantes, réactives et conviviales.",
+          ],
+        },
+      ],
+    },
+
     skills: {
       title: "compétences",
       subtitle: "MES MEILLEURES COMPÉTENCES",
@@ -571,11 +579,6 @@ export const content = {
       title: "contactez-moi",
       subtitle: "RESTONS EN CONTACT",
       social_media,
-    },
-    Certifications: {
-      title: "Certifications",
-      subtitle: "mes Certifications",
-      cert_content,
     },
   },
 };
