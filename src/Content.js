@@ -281,7 +281,7 @@ export const content = {
         {
           institution: "Tshwane University of Technology - South Africa",
           qualification: "Advanced Diploma in Computer Science",
-          duration: "2023 - Current",
+          duration: "2023 - 2025",
           description: [
             "Pursuing advanced knowledge in computer science, including system analysis, software engineering, and emerging technologies.",
             "Focusing on developing expertise in cutting-edge tools and frameworks to solve complex technical challenges.",
